@@ -1,2 +1,2 @@
-# DSA_C_CPP_Code
-A repo for my data structures and algorithms c/c++ code
+# Data Structures and Algorithms Solutions with explanations!
+A repo for some of my solved DSA problems with explanations and implementations in C, C++, and/or Python!
