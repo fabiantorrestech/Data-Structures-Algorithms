@@ -1,5 +1,12 @@
+
+/*
+Problem: 
+*/
+
 #include <vector>
 #include <iostream>
+
+using namespace std;
 
 bool alternatingSort(vector<int> a) {
     

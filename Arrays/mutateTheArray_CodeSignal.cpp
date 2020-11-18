@@ -1,3 +1,13 @@
+/*
+    Problem: 
+*/
+
+#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+
 vector<int> mutateTheArray(int n, vector<int> a) {
     
     // array of size n (a[n])
