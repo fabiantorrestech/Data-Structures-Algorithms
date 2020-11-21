@@ -1,5 +1,5 @@
 /*
-    Problem: 
+    Problem: practice assessment for square
 */
 
 
