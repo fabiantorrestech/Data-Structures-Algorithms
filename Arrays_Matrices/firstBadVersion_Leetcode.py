@@ -8,7 +8,7 @@ class Solution:
         
         # n = total number of versions.
         # ... so use binary search to solve for the first bad version.
-        # - iterative or Recursive BS? iterative by the way it works.
+        # -  iterative Binary Search by the way it works.
         
         left = 1
         right = n
