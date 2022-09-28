@@ -17,8 +17,9 @@ class Solution:
             elif sum > target:
                 right -= 1
             else:
-                ansList.append(left+1)  # 1-indexed array, so add 1.
-                ansList.append(right+1) # 1-indexed array, so add 1.
+                ansList.extend([left+1, right+1]) # - can use two .append()'s or one .extend() for multiple elements.
+                                                  # - add 1 to left, and 1 to right idx because of 1-indexed array.
                 left += 1
         
         return ansList 
+            
