@@ -20,7 +20,8 @@ class Solution:
         """
         
         k = k % len(nums)
-        if k < 0:
+        if k < 0:                               # accounts for negative k values 
+                                                #  - incase you want to rotate the list to the left using negative values
             k += len(nums)
         
         nums.reverse()                          # reverse the entire list ('n' elements)
