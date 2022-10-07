@@ -8,7 +8,7 @@ class Solution:
         
         for right in range(len(s)):
             while s[right] in seenChars:    # we've detected repeated character thats same as right ptr
-                seenChars.remove(s[left])  # - delete the duplicate from set. it will stil appear in set
+                seenChars.remove(s[left])   # - delete the duplicate from set. it will stil appear in set
                                             #   until duplicate has been deleted.
                 left += 1
             
