@@ -1,5 +1,5 @@
 #problem: https://leetcode.com/problems/longest-substring-without-repeating-characters/
-
+# - also works with uppercase letters.
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         seenChars = set()
