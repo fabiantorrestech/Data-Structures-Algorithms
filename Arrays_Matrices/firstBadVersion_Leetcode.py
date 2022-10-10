@@ -6,18 +6,16 @@
 class Solution:
     def firstBadVersion(self, n: int) -> int:
         
-        # n = total number of versions.
-        # ... so use binary search to solve for the first bad version.
-        # -  iterative Binary Search by the way it works.
+        left, right = 1, n
         
-        left = 1
-        right = n
         while left < right:
-            mid = int(left + (right-left)/2)
-            if isBadVersion(mid):
-                right = mid
+            mid = ((right-left)//2) + left
+            
+            if isBadVersion(mid): # discard right half of list. check left for more bad versions.
+                right = mid       # - SAVE mid bc it may be 1stBadVersion!
             else:
-                left = mid+1
-        
-        return left
+                left = mid+1      # discard left half of list. haven't yet found a bad version.
+                
+        return right              # return left OR right. both correct. (for lists of size 1)   
+                
         
