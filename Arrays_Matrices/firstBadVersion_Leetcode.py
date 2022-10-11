@@ -7,15 +7,17 @@ class Solution:
     def firstBadVersion(self, n: int) -> int:
         
         left, right = 1, n
+        firstBad = -1
         
-        while left < right:
-            mid = ((right-left)//2) + left
+        while left <= right:
+            mid = left + (right-left)//2
             
-            if isBadVersion(mid): # discard right half of list. check left for more bad versions.
-                right = mid       # - SAVE mid bc it may be 1stBadVersion!
+            if isBadVersion(mid) == True:
+                firstBad = mid              # Keep track of earliest BadVersion Tracked so far..
+                right = mid-1               # reduce target list of binary search to left half (excluding mid)
             else:
-                left = mid+1      # discard left half of list. haven't yet found a bad version.
+                left = mid+1                # reduce target list of binary search to right half (excluding mid)
                 
-        return right              # return left OR right. both correct. (for lists of size 1)   
+        return firstBad  
                 
         
