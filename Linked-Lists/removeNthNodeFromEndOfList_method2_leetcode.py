@@ -1,4 +1,5 @@
 #problem: https://leetcode.com/problems/remove-nth-node-from-end-of-list/ 
+# 2-pass approach, using 3 ptrs. - O(2n)
 
 # Definition for singly-linked list.
 # class ListNode:
