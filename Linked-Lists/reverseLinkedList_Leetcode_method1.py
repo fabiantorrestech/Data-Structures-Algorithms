@@ -1,4 +1,5 @@
 # problem: https://leetcode.com/problems/reverse-linked-list/
+# - iterative solution -- most optimal O(n) runtime, O(1) memory.
 
 # Definition for singly-linked list.
 # class ListNode:
