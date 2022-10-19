@@ -1,5 +1,5 @@
 # problem: https://leetcode.com/problems/max-area-of-island/
-# method 2 -- utilizing set to store explored grid spots of land
+# method 2 -- utilizing set to store explored grid spots of land. does not modify original map
 #           - SPACE: O(k) where k = number of 1's in grid
 #           - TIME: O(m*n), where m=numRows, n=numColumns
 
