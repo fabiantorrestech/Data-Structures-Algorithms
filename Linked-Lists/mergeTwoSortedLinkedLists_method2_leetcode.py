@@ -1,5 +1,5 @@
 # problem: https://leetcode.com/problems/merge-two-sorted-lists/
-# still optimal solution, but not very clean... No dummy head utilized. (check method1 for more elegant clean solution.)
+# still optimal solution, but not very clean... No dummy head utilized. (check method 3 & 4 for more elegant clean solution.)
 # - NO RECURSION
 
 # Definition for singly-linked list.
