@@ -1,10 +1,11 @@
 #problem: https://leetcode.com/problems/longest-substring-without-repeating-characters/
-# - also works with uppercase letters.
+# - method 1: utilizing a set() to keep track of all repeatedCharacters
+#       + until we remove the repeated occurence of character, it will still exist in the set.
+
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         seenChars = set()
-        left = 0
-        longestSubstr = 0
+        left, longestSubstr = 0, 0
         
         for right in range(len(s)):
             while s[right] in seenChars:    # we've detected repeated character thats same as right ptr

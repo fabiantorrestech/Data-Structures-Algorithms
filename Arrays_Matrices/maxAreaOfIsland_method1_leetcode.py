@@ -18,7 +18,7 @@ class Solution:
             return 0
         
         grid[i][j] = -1                       # - mark the current land spot as 'explored' 
-        totalArea = 1
+        totalArea = 1                         # - add current land piece we are on to our total area
         totalArea += self.explore(grid, i+1, j) # up
         totalArea += self.explore(grid, i-1, j) # down
         totalArea += self.explore(grid, i, j-1) # left

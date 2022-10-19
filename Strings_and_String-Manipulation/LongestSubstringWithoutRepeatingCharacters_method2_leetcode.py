@@ -1,12 +1,10 @@
-# problem:
-# -  method 1 since method 1 uses set() to keep track of repeated characters
-# - (THIS ONE!!) method 2 uses dict() to keep exact count of all occurences of characters.
+# problem: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+# - method 2 uses dict() to keep exact count of all occurences of characters.
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         
-        left, right = 0, 0
-        maxSubstr = 0
+        left, right, maxSubstr = 0, 0, 0
         seenChars = dict()
         
         while right < len(s):
