@@ -1,6 +1,7 @@
 # problem: https://leetcode.com/problems/max-area-of-island/
-# method1 -  no extra memory needed (O(m*n)), m=numRows, n=numColumns
-
+# method1 - Space: O(1) -- only constant memory needed
+#         - time: (O(m*n)), m=numRows, n=numColumns
+#         - modifies map though...
 
 class Solution:
     
