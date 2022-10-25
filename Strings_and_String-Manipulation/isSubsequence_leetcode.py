@@ -5,10 +5,10 @@
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
         
-        p1, p2 = 0, 0   # s[p1], t[p2]
+        p1, p2 = 0, 0       # s[p1], t[p2]
         
         while (p1 <= len(s)-1 ) and (p2 <= len(t)-1):
-            if s[p1] == t[p2]:
+            if s[p1] == t[p2]:  # see the same letter in s and t, look for next letter in s to find in t.
                 p1+=1
             p2 += 1
                 
@@ -16,3 +16,4 @@ class Solution:
             return True
         
         return False
+        
