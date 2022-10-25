@@ -2,6 +2,7 @@ import string
 
 # given str, returns dict() with occurences of each letters
 # - <k,v> => <char, numOfOccurences>
+# - counts all chars in string with 1 call!
 def countChars(s: string):
     seenChars = dict()
 
