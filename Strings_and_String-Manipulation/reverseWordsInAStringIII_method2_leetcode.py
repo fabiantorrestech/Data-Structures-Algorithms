@@ -1,4 +1,7 @@
 #problem: https://leetcode.com/problems/reverse-words-in-a-string-iii/
+# TIME: O(n)
+# SPACE: O(n)
+# - if you must make the 'reverseStr' method yourself.
 
 class Solution:
     
@@ -14,10 +17,10 @@ class Solution:
     
     def reverseWords(self, s: str) -> str:
         
-        listOfStr = s.split()   # tokenize string in python by splitting at space (default for .split() method)
+        s = s.split()   # tokenize string in python by splitting at space (default for .split() method)
         result = ""
-        for i in range(len(listOfStr)):
-            elem = listOfStr[i]                                     # treat each token of str as its own string
+        for i in range(len(s)):
+            elem = s[i]                                     # treat each token of str as its own string
             result+=self.reverseWord(list(elem), 0, len(elem)-1)    # reverse elem and append it result.
             result+=" "                                             # append a space to result
         

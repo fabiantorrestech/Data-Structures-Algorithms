@@ -1,4 +1,7 @@
 #problem: https://leetcode.com/problems/middle-of-the-linked-list/ 
+# method 2 -- traverse LL twice (USE MEETHOD 1 if possible)
+# TIME: O(n)
+# SPACE: O(1)
 
 # Definition for singly-linked list.
 # class ListNode:

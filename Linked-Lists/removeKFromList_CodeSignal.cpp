@@ -28,16 +28,13 @@ ListNode<int> * removeKFromList(ListNode<int> * l, int k) {
     ListNode<int>* prev = NULL;
     bool head_replacement = false;
     
-    while(curr != NULL)
-    {   
+    while(curr != NULL){   
         //cout << "curr->value: " << curr->value << endl;
         
         // head needs to be replaced...
-        if(l == curr && prev == NULL && curr->value == k)
-        {
+        if(l == curr && prev == NULL && curr->value == k){
             //cout << "head replacement on curr->value: " << curr->value << endl;
-            if(curr->next != NULL)
-            {
+            if(curr->next != NULL){
                 curr = curr->next;
                 l = curr;
                 continue;
@@ -49,20 +46,15 @@ ListNode<int> * removeKFromList(ListNode<int> * l, int k) {
         }
         
         // intermediate nodes after head need replacing...
-        else if(curr->value == k)
-        {
+        else if(curr->value == k){
             //cout << "general replacement" << endl;
-            if(prev != NULL)
-            {
-                if(curr->next != NULL)
-                {
+            if(prev != NULL){
+                if(curr->next != NULL){
                     curr = curr->next;
                     prev->next = curr;
                     continue;   
                 }
-                
-                else
-                {
+                else{
                     curr = curr->next;
                     prev->next = NULL;
                     continue;

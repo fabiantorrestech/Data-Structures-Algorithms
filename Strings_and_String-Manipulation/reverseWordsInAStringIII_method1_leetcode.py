@@ -1,16 +1,14 @@
 # problem: https://leetcode.com/problems/reverse-words-in-a-string-iii
-# - this is a shorter solution if they allow you to use slice operator to reverse tokenized strings.
-
+# TIME: O(n)
+# SPACE: O(n)
+# - toptimal 'pythonic' solution -- utilizing tokening str with .split(), and reverseing via slicing operators [::-1].
 class Solution:
-    
     def reverseWords(self, s: str) -> str:
         
-        listOfStr = s.split()   # tokenize string in python by splitting at space (default for .split() method)
-        result = ""
+        s = s.split()           # tokenize input str 's'
+        ans = ""                # create empty str for answer ('ans')
+        for word in s:
+            ans += word[::-1]   # - reverse curr word
+            ans += " "          # - add into 'ans'.
         
-        for i in range(len(listOfStr)):
-            elem = listOfStr[i]     # treat each token of str as its own string
-            result+=elem[::-1]      # use slice operator to reverse elem, add it to result 
-            result+=" "             # append a space to result
-        
-        return result.strip()       # strip off trailing white space
+        return ans.strip()      # strip it of last trailing whitespace.
