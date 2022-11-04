@@ -1,4 +1,3 @@
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -9,8 +8,8 @@ class Solution:
     
     
     def recValidBST(self, curr: Optional[TreeNode], leftBoundary: int, rightBoundary: int) -> bool:
-        if not curr:                                                    # base case / empty tree is a valid BST.
-            return True
+        
+        if not curr: return True                                        # base case / empty tree is a valid BST.
         
         if curr.val <= leftBoundary or curr.val >= rightBoundary:       # leftBoundary < curr < rightBoundary
             return False
@@ -26,3 +25,4 @@ class Solution:
     
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
         return self.recValidBST(root, float("-inf"), float("inf"))      # solve via recursion
+                                                                        # - initial upperBound = +infinity, lowerBound = -infinity

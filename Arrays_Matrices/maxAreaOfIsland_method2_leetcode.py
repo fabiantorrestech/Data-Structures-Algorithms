@@ -12,7 +12,7 @@ class Solution:
             print("")
         print("")
         
-    def explore(self, grid: List[List[int]], i: int, j: int, visitedLand: set[int])-> int:
+    def explore(self, grid: List[List[int]], i: int, j: int, visitedLand: 'set[int]')-> int:
         
         if i<0 or i>=len(grid) or j<0 or j>=len(grid[i]) or grid[i][j]==0 or (i,j) in visitedLand: # boundary checks / if its water (0) / already been visited (-1)
             return 0
