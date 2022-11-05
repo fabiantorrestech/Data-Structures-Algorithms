@@ -1,7 +1,8 @@
 # problem: https://leetcode.com/problems/combinations/
 # - TIME: O(k * n^k) in code, but in theory, O(k * nCk)
 # - SPACE: O(nCk)
-# brute force solution, which happens to be the only solution.  
+#   - brute force solution, which happens to be the only solution.
+#   - must compute all solutions, then pick the ones we want.
 
 class Solution:
     
