@@ -1,6 +1,6 @@
 # proiblem:
 # - TIME: O(s+p) -- # traverse p once, then traverse s once.
-# - SPACE: O(s+p) -- two dicts, both the size of the inputs.
+# - SPACE: O(p) -- two dicts, both the size of p.
 # - optimal approach with 1 pass on s and p, updating dictionaries on the fly.
 
 class Solution:
