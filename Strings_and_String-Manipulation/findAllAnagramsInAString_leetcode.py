@@ -31,8 +31,6 @@ class Solution:
 
             if dictS == dictP:                   # add idx(l) if dictS == dictP
                 ans.append(l)
-                
-            r+=1                                 # increase window to right  (window size is now len(p)+1)
         
         return ans
             

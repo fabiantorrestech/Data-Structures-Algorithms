@@ -15,8 +15,6 @@ class Solution:
             
             if ((sChar in dictS and dictS[sChar] != tChar) or      # there is a mapping for sChar in dictS AND mapping for sChar is not tChar
                 (tChar in dictT and dictT[tChar] != sChar)):       # there is a mapping for tChar in dictT AND mapping for tChar is not sChar
-                print(dictS)
-                print(dictT)
                 return False
             
             dictS[sChar] = tChar                                    # map t's letters to S (if a mapping is doubly mapped/overwritten, it will take on new value)
