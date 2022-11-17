@@ -16,17 +16,17 @@ class Solution:
         if not root: return []
         
         ans = []
-        q = deque()                 # use a deque as a 'queue' (.append() at right, .popleft() at left)
+        q = deque()                                 # use a deque as a 'queue' (.append() at right, .popleft() at left)
         q.append(root)
         
         while q:
             level = []
-            for i in range(len(q)): # empty out q of nodes of currLevel (into level[]).
+            for i in range(len(q)):                 # empty out q of nodes of currLevel (into level[]).
                 curr = q.popleft()
                 level.append(curr.val)
                 
                 if curr.left: q.append(curr.left)   # Then add all L-R children of currLevel nodes at this level to q for next level[] iteration.
                 if curr.right: q.append(curr.right)
-            ans.append(level)       # add currLevel to answer.
+            ans.append(level)                       # add currLevel to answer.
         
         return ans
