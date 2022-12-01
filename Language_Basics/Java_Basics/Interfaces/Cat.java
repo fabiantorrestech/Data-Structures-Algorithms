@@ -1,4 +1,4 @@
-package Java_Interfaces;
+package Interfaces;
 
 public class Cat implements Printable {
 

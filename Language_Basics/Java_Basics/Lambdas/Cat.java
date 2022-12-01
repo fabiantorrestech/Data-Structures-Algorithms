@@ -1,6 +1,6 @@
-package Java_Lambdas;
+package Lambdas;
 
-import Java_Interfaces.Printable;
+import Interfaces.Printable;
 
 public class Cat implements Printable {
 

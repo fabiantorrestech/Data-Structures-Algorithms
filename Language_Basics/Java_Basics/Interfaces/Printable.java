@@ -1,4 +1,4 @@
-package Java_Interfaces;
+package Interfaces;
 
 // example interface with 1 method to show how interfaces work
 public interface Printable {

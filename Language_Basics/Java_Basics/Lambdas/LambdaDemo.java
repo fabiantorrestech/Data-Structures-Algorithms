@@ -3,10 +3,14 @@ package Lambdas;
 import Interfaces.Cat;
 import Interfaces.Printable;
 
-public class InterfaceDemo2 {
+public class LambdaDemo {
     public static void main(String[] args){
-        Interfaces.Cat myCat = new Cat();      // create a new Cat object
-        printThing(myCat);
+        Interfaces.Cat myCat = new Cat();       // create a new Cat object
+                                                // lambda function example!
+        printThing(() -> {                      // - () = params ...(still needs to be Printable implemented)
+                                                // - {} = function
+            System.out.println("Meow!");
+        });
     }
 
     static void printThing(Printable thing){ // takes in any object that implements the "Printable" interface (Cat object does!)

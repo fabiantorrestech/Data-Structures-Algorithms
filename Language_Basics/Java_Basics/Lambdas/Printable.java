@@ -1,6 +1,7 @@
-package Java_Lambdas;
+package Lambdas;
 
-// example interface with 1 method to show how interfaces work
+// Functional Interface = Interface with 1 abstract-method
+// - lambda functions ONLY work with functional-interfaces.
 public interface Printable {
     void print();
 }
