@@ -12,7 +12,9 @@ https://docs.google.com/spreadsheets/d/14ZhhiO3YC_CBuzD4zAuXObglvdMv5A4_kZzLSn3Q
 I organize these problems by the type of category they fall into: Dynamic Programming, Arrays, Strings, etc...
 I format the problems like so: problemInCamelcase_methodN_platform.langaugeType
 
-_ex: - groupAnagrams_method1_leetcode.py
+EXAMPLE:
+
+_groupAnagrams_method1_leetcode.py
 
 Looking for problem "Group Anagrams" from Leetcode._
 
