@@ -13,8 +13,10 @@ I organize these problems by the type of category they fall into: Dynamic Progra
 I format the problems like so: problemInCamelcase_methodN_platform.langaugeType
 
 _ex: groupAnagrams_method1_leetcode.py
-Looking for problem "Group Anagrams" from Leetcode.
-There may be multiple methods I have muliple implementations of this problem that work slightly differently, so method1 is just implementation #1 that is a valid solution to the problem.
-This solution was implemented in python (.py extension)._
+Looking for problem "Group Anagrams" from Leetcode._
+
+_There may be multiple methods I have muliple implementations of this problem that work slightly differently, so method1 is just implementation #1 that is a valid solution to the problem.
+
+_This solution was implemented in python (.py extension).
 
 
