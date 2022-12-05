@@ -2,31 +2,32 @@
 # - TIME: O(n), where n=number of nodes in Binary Tree
 # - SPACE: O(n), since we need to store each node's value once, then store all levels into one array.
 
+from collections import deque
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
 #         self.left = left
 #         self.right = right
-from collections import deque
-
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
         
         if not root: return []
         
-        ans = []
-        q = deque()                                 # use a deque as a 'queue' (.append() at right, .popleft() at left)
-        q.append(root)
+        result = []             # answer list
+        q = deque()             # used as a queue
+        q.append(root)          # need to intialize queue with root node.
         
-        while q:
-            level = []
-            for i in range(len(q)):                 # empty out q of nodes of currLevel (into level[]).
+        while q:                                        # loop through while the q isn't empty.
+            temp = []                                   # create temp[] list to store all nodes in this level
+            
+            for i in range(len(q)):                     # - range(len(q)) takes a snapshot of how long the queue is for this level
+                                                        #   (not counting the nodes we will add for the next level while in the loop). 
                 curr = q.popleft()
-                level.append(curr.val)
-                
-                if curr.left: q.append(curr.left)   # Then add all L-R children of currLevel nodes at this level to q for next level[] iteration.
+                if curr.left: q.append(curr.left)       # these 2 statements are where we add in the children of curr nodes for next iteration
                 if curr.right: q.append(curr.right)
-            ans.append(level)                       # add currLevel to answer.
+                temp.append(curr.val)
+            result.append(temp)                         # append current level temp[] list to the answer of lists.
         
-        return ans
+        return result
