@@ -1,6 +1,6 @@
 # problem: https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/
 # - TIME: O(n)
-# - SPACE: O(k), where k is the number of child nodes.
+# - SPACE: O(k), where k is number of unexplored 'next' nodes in each level.
 #   - UTILIZE STACK! very fast and easy to understand solution, to append old curr.next's until the end! (:
 
 
