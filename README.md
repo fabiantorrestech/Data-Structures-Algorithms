@@ -14,7 +14,7 @@ I format the problems like so: problemInCamelcase_methodN_platform.langaugeType
 
 EXAMPLE:
 
-  groupAnagrams_method1_leetcode.py
+    groupAnagrams_method1_leetcode.py
 
 Looking for problem "Group Anagrams" from Leetcode._
 
