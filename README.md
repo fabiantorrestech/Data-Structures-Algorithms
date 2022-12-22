@@ -16,7 +16,7 @@ EXAMPLE:
 
     groupAnagrams_method1_leetcode.py
 
-Looking for problem "Group Anagrams" from Leetcode._
+Looking for problem "Group Anagrams" from Leetcode.
 
 _There may be multiple methods I have muliple implementations of this problem that work slightly differently, so method1 is just implementation #1 that is a valid solution to the problem._
 
