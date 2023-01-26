@@ -12,4 +12,5 @@ class Solution:
             if nums[i] in seenNums:
                 return True
             seenNums.add(nums[i])
+            
         return False
