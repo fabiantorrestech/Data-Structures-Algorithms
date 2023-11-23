@@ -14,17 +14,8 @@
  * }
  */
 class Solution {
-    
-    void printList(ListNode curr){
-        while(curr != null){
-            System.out.print(curr.val + " ");
-            curr = curr.next;
-        }
-        System.out.println();
-    }
-    
     public ListNode reverseList(ListNode head) {
-        // printList(head);
+        
         ListNode curr = head;
         ListNode prev = null;
         ListNode future = null;
@@ -34,7 +25,7 @@ class Solution {
             prev = curr;
             curr = future;
         }
-        // printList(prev);
+        
         return prev;
     }
 }
