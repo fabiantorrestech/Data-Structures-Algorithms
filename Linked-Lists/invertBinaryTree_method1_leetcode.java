@@ -1,7 +1,7 @@
 // problem: https://leetcode.com/problems/invert-binary-tree/
 // TIME: O(n)
 // SPACE: O(logn) - 1 stack frame for each level, so you would logn frames at deepest depth.
-// - Recursive solution in Java
+// - Recursive DFS solution in Java
 
 /**
  * Definition for a binary tree node.
