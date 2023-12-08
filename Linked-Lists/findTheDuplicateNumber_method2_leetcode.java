@@ -2,7 +2,7 @@
 // TIME: O(n)
 // SPACE: O(n)
 // - We use a hashmap to keep track of already seen numbers. then we we query for a number in the hashmap that comes back with a valid entry, 
-//   we then know that we've reached the duplicate number.
+//   we then know that we've reached the duplicate number. (NOT LINKED LIST implementation)
 
 
 class Solution {
